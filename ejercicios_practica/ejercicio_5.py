@@ -13,13 +13,21 @@
 # Aquí copiar la función "generar_invitados"
 # ya elaborada
 
-# --------------------------------
+def generar_invitados():
+    invitados = []
+    for x in range (3):
+        print ("Ingrese el nombre del invitado", x+1)
+        invitado= input ()
+        invitados.append(invitado)
+    return invitados
 
 # --------------------------------
 # Aquí copiar la función "ordenar"
 # ya elaborada
 
-# --------------------------------
+def ordenar(lista):
+    lista.sort()
+    return (lista)
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -35,7 +43,7 @@ if __name__ == '__main__':
     # 1) Primero generar una lista de invitados con "generar_invitados"
     #    Almacenar el resultado en "lista_invitados"
 
-    # lista_invitados = generar_invitados()
+    lista_invitados = generar_invitados()
 
     # 2) Luego ordenar la lista de invitados con "ordenar"
     #    --> Pasar como parámetro la "lista_invitados"
@@ -44,5 +52,8 @@ if __name__ == '__main__':
     # lista_invidatos_ordenada = ordenar(lista_invitados)
 
     # Imprimir en pantalla "lista_invidatos_ordenada":
-
+    lista_ordenada = ordenar (lista_invitados)
+    print ("La Lista Ordenada Es:")
+    print (" ".join(lista_ordenada))
+    print ("\n")
     print("terminamos")

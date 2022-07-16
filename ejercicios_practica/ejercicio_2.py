@@ -26,14 +26,21 @@ def promedio(numeros):
     # La función debe retornar (return) el promedio calculado
     # La función debe contemplar si se le pasa una lista vacia
     # (es decir, de "0" elementos)
-
+    suma= sum (numeros)
+    #print(suma)
+    cantidad = len (numeros)
+    #print (cantidad)
+    if cantidad == 0:
+        print ( "La lista está vacia")
+    else: 
+        resultado= suma / cantidad
     return resultado
 
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    numeros = [2, 4, 6, 8, 10, 12]
+    numeros = [2, 4, 6, 15, 24]
 
     # Alumno: Complete la función "promedio"
 
@@ -41,6 +48,6 @@ if __name__ == '__main__':
     resultado_promedio = promedio(numeros)
 
     # Luego imprimir en pantalla el valor resultante:
-    # print(....)
+    print("El promedio es: {}".format(resultado_promedio))
 
     print("terminamos")
